@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="TitleIcon">
+    <file>用户 .png</file>
+  </qresource>
+</RCC>
