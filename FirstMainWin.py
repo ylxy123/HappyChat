@@ -10,14 +10,14 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_firstMainWin(object):
-    def setupUi(self, firstMainWin):
-        firstMainWin.setObjectName("firstMainWin")
-        firstMainWin.resize(400, 300)
+class Ui_MainWin(object):
+    def setupUi(self, MainWin):
+        MainWin.setObjectName("MainWin")
+        MainWin.resize(400, 300)
 
-        self.retranslateUi(firstMainWin)
-        QtCore.QMetaObject.connectSlotsByName(firstMainWin)
+        self.retranslateUi(MainWin)
+        QtCore.QMetaObject.connectSlotsByName(MainWin)
 
-    def retranslateUi(self, firstMainWin):
+    def retranslateUi(self, MainWin):
         _translate = QtCore.QCoreApplication.translate
-        firstMainWin.setWindowTitle(_translate("firstMainWin", "欢迎"))
+        MainWin.setWindowTitle(_translate("MainWin", "欢迎"))

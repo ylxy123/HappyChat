@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>:/Title_Icon/E:/Desktop/python脚本/畅聊/HappyChat/用户 .png</normaloff>:/Title_Icon/E:/Desktop/python脚本/畅聊/HappyChat/用户 .png</iconset>
+    <normaloff>用户 .png</normaloff>用户 .png</iconset>
   </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
@@ -36,7 +36,7 @@
     <string>用户名：</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="username_lineEdit">
    <property name="geometry">
     <rect>
      <x>140</x>
@@ -46,7 +46,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="btn_login">
    <property name="geometry">
     <rect>
      <x>80</x>
@@ -84,7 +84,7 @@
     <string>密码：</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_2">
+  <widget class="QLineEdit" name="password_lineEdit">
    <property name="geometry">
     <rect>
      <x>140</x>
@@ -96,9 +96,9 @@
   </widget>
  </widget>
  <tabstops>
-  <tabstop>lineEdit</tabstop>
-  <tabstop>lineEdit_2</tabstop>
-  <tabstop>pushButton</tabstop>
+  <tabstop>username_lineEdit</tabstop>
+  <tabstop>password_lineEdit</tabstop>
+  <tabstop>btn_login</tabstop>
  </tabstops>
  <resources>
   <include location="icon_rc.qrc"/>
