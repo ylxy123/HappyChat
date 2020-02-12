@@ -4,9 +4,11 @@
 # -*- coding: utf-8 -*-
 
 from PyQt5.QtWidgets import QWidget, QApplication, QMainWindow, QLineEdit, QMessageBox
+from PyQt5.Qt import *
 import sys
 from login import Ui_login
 from FirstMainWin import *
+from CallMain import CallMain
 
 class CallLogin(QWidget, Ui_login):
     def __init__(self):
@@ -22,7 +24,6 @@ class CallLogin(QWidget, Ui_login):
         username = self.username_lineEdit.text()
         password = self.password_lineEdit.text()
         if username =='' or password == '':
-            print(1)
             reply = QMessageBox.warning(self, "警告", "请输入用户名和密码")
             return
         # 查询数据库
@@ -30,11 +31,18 @@ class CallLogin(QWidget, Ui_login):
         # 查询数据库
 
         if username == 'ylxy' and password == '225252':
-            self.close()
             Ui_main.show()
+            self.close()
 
         else:
             reply = QMessageBox.warning(self, "警告", "用户名或密码错误，请重新输入！")
+
+
+    def keyPressEvent(self, evt):
+        if evt.key() == Qt.Key_Enter:
+            self.click_login()
+
+
 
     def connecter(self):
         self.btn_login.clicked.connect(self.click_login)
@@ -42,6 +50,6 @@ class CallLogin(QWidget, Ui_login):
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     Lg = CallLogin()
-    Ui_main = Ui_MainWin
+    Ui_main = CallMain()
     Lg.show()
     sys.exit(app.exec())

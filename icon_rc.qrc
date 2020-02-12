@@ -1,5 +1,9 @@
 <RCC>
   <qresource prefix="TitleIcon">
-    <file>用户 .png</file>
+    <file>rc/注销.png</file>
+    <file>rc/background.png</file>
+    <file>rc/happytalk.jpg</file>
+    <file>rc/视频通话.png</file>
+    <file>rc/用户 .png</file>
   </qresource>
 </RCC>
