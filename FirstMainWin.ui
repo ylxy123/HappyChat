@@ -6,14 +6,254 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>415</width>
-    <height>366</height>
+    <width>595</width>
+    <height>503</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>欢迎</string>
+   <string>清单List</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="icon_rc.qrc">
+    <normaloff>:/TitleIcon/rc/清单.png</normaloff>:/TitleIcon/rc/清单.png</iconset>
+  </property>
+  <widget class="QTabWidget" name="menu">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>591</width>
+     <height>501</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>昨天</string>
+    </attribute>
+    <widget class="QWidget" name="gridLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>30</y>
+       <width>511</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>添加已完成的任务：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="Line" name="line">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>80</y>
+       <width>591</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>110</y>
+       <width>491</width>
+       <height>301</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="time_label_2">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>430</y>
+       <width>221</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string>今天</string>
+    </attribute>
+    <widget class="Line" name="line_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>80</y>
+       <width>581</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser_2">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>110</y>
+       <width>491</width>
+       <height>301</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="time_label">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>430</y>
+       <width>221</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>30</y>
+       <width>511</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>添加今天的任务：  </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_2"/>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>明天</string>
+    </attribute>
+    <widget class="QLabel" name="time_label_3">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>430</y>
+       <width>221</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser_3">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>110</y>
+       <width>491</width>
+       <height>301</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="Line" name="line_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>80</y>
+       <width>591</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>30</y>
+       <width>511</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>添加明天的任务：  </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_3"/>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_4">
+    <attribute name="title">
+     <string>日 历</string>
+    </attribute>
+    <widget class="QCalendarWidget" name="calendarWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>581</width>
+       <height>471</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
  </widget>
- <resources/>
- <connections/>
+ <resources>
+  <include location="icon_rc.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>lineEdit_3</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>textBrowser_3</receiver>
+   <slot>insertPlainText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>237</x>
+     <y>79</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>253</x>
+     <y>168</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

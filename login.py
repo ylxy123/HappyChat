@@ -6,7 +6,6 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-from PyQt5.QtWidgets import QWidget, QApplication, QMainWindow, QLineEdit, QMessageBox
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
@@ -14,7 +13,6 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_login(object):
     def setupUi(self, login):
         login.setObjectName("login")
-
         login.setEnabled(True)
         login.resize(632, 253)
         login.setMinimumSize(QtCore.QSize(609, 233))
