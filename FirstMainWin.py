@@ -13,7 +13,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWin(object):
     def setupUi(self, MainWin):
         MainWin.setObjectName("MainWin")
-        MainWin.resize(595, 503)
+        MainWin.resize(595, 506)
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap(":/TitleIcon/rc/清单.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         MainWin.setWindowIcon(icon)
@@ -107,10 +107,29 @@ class Ui_MainWin(object):
         self.calendarWidget.setGeometry(QtCore.QRect(0, 0, 581, 471))
         self.calendarWidget.setObjectName("calendarWidget")
         self.menu.addTab(self.tab_4, "")
+        self.tab_5 = QtWidgets.QWidget()
+        self.tab_5.setObjectName("tab_5")
+        self.apply_button = QtWidgets.QPushButton(self.tab_5)
+        self.apply_button.setGeometry(QtCore.QRect(400, 420, 141, 41))
+        self.apply_button.setObjectName("apply_button")
+        self.widget = QtWidgets.QWidget(self.tab_5)
+        self.widget.setGeometry(QtCore.QRect(40, 40, 501, 61))
+        self.widget.setObjectName("widget")
+        self.horizontalLayout_4 = QtWidgets.QHBoxLayout(self.widget)
+        self.horizontalLayout_4.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_4.setObjectName("horizontalLayout_4")
+        self.label_4 = QtWidgets.QLabel(self.widget)
+        self.label_4.setObjectName("label_4")
+        self.horizontalLayout_4.addWidget(self.label_4)
+        self.set_opacity_bar = QtWidgets.QSlider(self.widget)
+        self.set_opacity_bar.setMinimum(30)
+        self.set_opacity_bar.setOrientation(QtCore.Qt.Horizontal)
+        self.set_opacity_bar.setObjectName("set_opacity_bar")
+        self.horizontalLayout_4.addWidget(self.set_opacity_bar)
+        self.menu.addTab(self.tab_5, "")
 
         self.retranslateUi(MainWin)
-        self.menu.setCurrentIndex(2)
-        self.lineEdit_3.textChanged['QString'].connect(self.textBrowser_3.append)
+        self.menu.setCurrentIndex(4)
         QtCore.QMetaObject.connectSlotsByName(MainWin)
 
     def retranslateUi(self, MainWin):
@@ -123,4 +142,7 @@ class Ui_MainWin(object):
         self.label_3.setText(_translate("MainWin", "添加明天的任务：  "))
         self.menu.setTabText(self.menu.indexOf(self.tab_2), _translate("MainWin", "明天"))
         self.menu.setTabText(self.menu.indexOf(self.tab_4), _translate("MainWin", "日 历"))
+        self.apply_button.setText(_translate("MainWin", "应  用"))
+        self.label_4.setText(_translate("MainWin", "    界面透明度：    "))
+        self.menu.setTabText(self.menu.indexOf(self.tab_5), _translate("MainWin", "设置"))
 import icon_rc_rc

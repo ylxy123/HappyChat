@@ -51,16 +51,23 @@ class CallMain(QWidget, Ui_MainWin):
         self.cursor = self.textBrowser_2.textCursor()
         self.textBrowser_2.moveCursor(self.cursor.End)
 
+    def set_opacity(self):
+        op = (self.set_opacity_bar.value()+1)/100
+
+        self.setWindowOpacity(op)
 
 
     def keyPressEvent(self, evt):
-        if evt.key() == Qt.Key_Enter:
+        if evt.key() == Qt.Key_Enter or evt.key() == Qt.Key_Return:
             self.show_today_browser()
 
 
 
+
     def connecter(self):
-        pass
+        self.apply_button.clicked.connect(self.set_opacity)
+
+
 
 
 
